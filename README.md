@@ -38,6 +38,7 @@ conda create -n environment_name python=3.10
 conda activate environment_name
 ```
 ### OR 
+
 ```For Windows
 
 py -3 -m venv venv
