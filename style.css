@@ -1,0 +1,25 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  } */
+
+  /* Set the background image */
+  body {
+    background-image: url('Movie.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Add additional styles for content
+  .content {
+    text-align: center;
+    padding: 100px;
+    color: white;
+  }
+   */

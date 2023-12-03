@@ -1,0 +1,11 @@
+flask
+numpy
+pandas 
+gunicorn
+ pickle
+ streamlit 
+ requests
+ pillow
+
+ colorama
+ rich
