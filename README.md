@@ -19,8 +19,52 @@
 
 See the implementation details with <a href="https://github.com/NayakSubhransu/Movie-Recommendation-System/blob/main/Movie_Recommendation_System.ipynb">IPython Notebook</a>
 
+### __Installation__
+To use the app on the local machine, open Anaconda Prompt and run the following commands:
 
-## `Key Features`
+1. Clone the Repository
+```sh
+git clone git@github.com:NayakSubhransu/Movie-Recommendation-System.git
+```
+
+2. Change Working Directory
+```sh
+cd  Movie-Recommendation-System
+```
+
+3. If needed create a Virtual Environment and activate it
+```sh
+conda create -n environment_name python=3.10
+conda activate environment_name
+```
+
+4. Install the requirements
+```sh
+python -m pip install -r requirements.txt
+```
+
+5. Run the App
+```sh
+streamlit run app.py
+```
+
+6. Open the URL generated in a browser to use the App
+
+7. You can use images in the sample_images folder
+8. To Run the application on CLI,install the following packages
+   ```sh
+   pip install pandas requests rich
+   ```
+9. Run the following Commands in the terminal:
+```sh
+To see the movie list, Run the following Command
+```python app_cli.py --movie list --page_number 2(default)```
+
+To predict the top 5 movies according to a selected movie, Run the following Command
+```python app_cli.py --movie "YourMovieTitle" --num_recommendations 5(default)```
+```
+
+##the app `Key Features`
 
 - Implements The content based Filtering Algorithm
 - Implements Cosine Similarity Algorithm and Vectorization of Textual Documents 
