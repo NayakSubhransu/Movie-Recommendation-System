@@ -52,19 +52,19 @@ streamlit run app.py
 
 7. You can use images in the sample_images folder
 8. To Run the application on CLI,install the following packages
-   ```sh
-   pip install pandas requests rich
-   ```
+ ```sh
+ pip install pandas requests rich
+ ```
 9. Run the following Commands in the terminal:
-```sh
+
 To see the movie list, Run the following Command
 ```python app_cli.py --movie list --page_number 2(default)```
 
-To predict the top 5 movies according to a selected movie, Run the following Command
+To predict the top 5 movies according to your selected movie, Run the following Command
 ```python app_cli.py --movie "YourMovieTitle" --num_recommendations 5(default)```
-```
 
-##the app `Key Features`
+
+## `Key Features`
 
 - Implements The content based Filtering Algorithm
 - Implements Cosine Similarity Algorithm and Vectorization of Textual Documents 
