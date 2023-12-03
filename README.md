@@ -37,18 +37,10 @@ cd Movie-Recommendation-System
 conda create -n environment_name python=3.10
 conda activate environment_name
 ```
-### OR 
-
-For Windows
+### OR
 
 ```py -3 -m venv venv
 venv\Scripts\activate```
-
-For macOS and Linux
-
-```python3 -m venv venv
-source venv/bin/activate```
-
 
 4. Install the requirements
 ```sh
