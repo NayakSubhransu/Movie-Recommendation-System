@@ -29,7 +29,7 @@ git clone git@github.com:NayakSubhransu/Movie-Recommendation-System.git
 
 2. Change Working Directory
 ```sh
-cd  Movie-Recommendation-System
+cd Movie-Recommendation-System
 ```
 
 3. If needed create a Virtual Environment and activate it
