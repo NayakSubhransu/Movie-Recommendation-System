@@ -21,7 +21,8 @@
 
 ## Then run the following command in the Terminal:
 ```python app_cli.py --movie list --page_number 2(default)```
-```python app_cli.py --movie "YourMovieTitle" --num_recommendations 5(default)``
+
+```python app_cli.py --movie "YourMovieTitle" --num_recommendations 5(default)```
 `
 
 
