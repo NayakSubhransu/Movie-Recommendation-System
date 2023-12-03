@@ -37,6 +37,18 @@ cd Movie-Recommendation-System
 conda create -n environment_name python=3.10
 conda activate environment_name
 ```
+### OR 
+```For Windows
+
+py -3 -m venv venv
+venv\Scripts\activate```
+
+```For macOS and Linux
+
+python3 -m venv venv
+source venv/bin/activate```
+
+
 
 4. Install the requirements
 ```sh
@@ -50,17 +62,18 @@ streamlit run app.py
 
 6. Open the URL generated in a browser to use the App
 
-7. You can use images in the sample_images folder
-8. To Run the application on CLI,install the following packages
+7. To Run the application on CLI, install the following packages
  ```sh
  pip install pandas requests rich
  ```
-9. Run the following Commands in the terminal:
+8. Run the following Commands in the terminal:
 
 To see the movie list, Run the following Command
+
 ```python app_cli.py --movie list --page_number 2(default)```
 
 To predict the top 5 movies according to your selected movie, Run the following Command
+
 ```python app_cli.py --movie "YourMovieTitle" --num_recommendations 5(default)```
 
 
