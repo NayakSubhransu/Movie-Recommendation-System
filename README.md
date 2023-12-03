@@ -39,16 +39,15 @@ conda activate environment_name
 ```
 ### OR 
 
-```For Windows
+For Windows
 
-py -3 -m venv venv
+```py -3 -m venv venv
 venv\Scripts\activate```
 
-```For macOS and Linux
+For macOS and Linux
 
-python3 -m venv venv
+```python3 -m venv venv
 source venv/bin/activate```
-
 
 
 4. Install the requirements
