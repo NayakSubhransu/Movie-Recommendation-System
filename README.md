@@ -1,5 +1,4 @@
 
-
 <a name="readme-top"></a>
 
 <div align="center">
@@ -39,8 +38,10 @@ conda activate environment_name
 ```
 ### OR
 
-```py -3 -m venv venv
-venv\Scripts\activate```
+```sh
+py -3 -m venv venv
+venv\Scripts\activate
+```
 
 4. Install the requirements
 ```sh
