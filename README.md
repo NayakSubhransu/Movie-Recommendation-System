@@ -63,7 +63,11 @@ streamlit run app.py
 
 7. To Run the application on CLI, install the following packages
  ```sh
- pip install pandas requests rich
+ pip install pandas requests rich pyfiglet
+ ```
+OR
+ ```sh
+ pip install -r requirements_cli.txt
  ```
 8. Run the following Commands in the terminal:
 
