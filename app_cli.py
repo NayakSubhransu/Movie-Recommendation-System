@@ -9,6 +9,10 @@ from rich import box
 from rich.panel import Panel
 from rich.text import Text
 
+
+from pyfiglet import Figlet
+
+
 console = Console()
 
 def fetch_poster(movie_id):
@@ -18,7 +22,7 @@ def fetch_poster(movie_id):
     full_path = f"https://image.tmdb.org/t/p/w500/{poster_path}"
     return full_path, data['overview']
 
-def list_all_movies(page_size=1000, page_number=1):
+def list_all_movies(page_size=800, page_number=1):
     start_index = (page_number - 1) * page_size
     end_index = start_index + page_size
 
@@ -56,11 +60,11 @@ def display_recommendations(recommended_movie_data):
 
     for movie in recommended_movie_data:
         panel = Panel(
-            Text.from_markup(f"[bold cyan]Title:[/bold cyan] [yellow]{movie['title']}[/yellow]\n[magenta]Overview:[/magenta] {movie['overview']}"),
-            title="[green]Movie Details[/green]",
+            Text.from_markup(f"[bold bright_cyan]Title:[/bold bright_cyan] [underline yellow]{movie['title']}[/underline yellow]\n[bright_magenta]Overview:[/bright_magenta] [italic white]{movie['overview']}[/italic white]"),
+            title="[bold green]Movie Details[/bold green]",
             style="white",
             border_style="red",
-            padding=(1, 3),
+            padding=(2, 4),
             # width=100  # Adjust the width as needed
         )
         console.print(panel)
@@ -82,11 +86,20 @@ def main():
         display_recommendations(recommended_movie_data)
     except Exception as e:
         console.print(f"[red]Error:[/red] {e}")
-
+        
+# Print text with a specific font
+def print_large_text(text, font='standard'):
+    f = Figlet(font=font)
+    ascii_art = f.renderText(text)
+    print(ascii_art)
+    
 if __name__ == "__main__":
     movies = pickle.load(open('model/movie_list.pkl', 'rb'))
     similarity = pickle.load(open('model/similarity.pkl', 'rb'))
 
-    console.print("\n[bold yellow]Welcome to the Movie Recommender CLI![/bold yellow]\n")
+    # console.print("\n[bright_yellow]Welcome to the Movie Recommender CLI![/bright_yellow]\n")
+    print_large_text("Welcome to the Movie Recommender Command Line Interface!", font='rounded')
     main()
-    console.print("\n[bold yellow]Thank you for using the Movie Recommender CLI![/bold yellow]\n")
+    print_large_text("Thank you for using the Movie Recommender CLI!", font='tinker-toy')
+    
+    # console.print("\n[bold yellow]Thank you for using the Movie Recommender CLI![/bold yellow]\n")
